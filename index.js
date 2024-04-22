@@ -31,8 +31,8 @@ function establishUserDbConnection(userDbConfig) {
     return mysql.createConnection(userDbConfig);
 }
 
-// Route to render the login page
-app.get('/signup', (req, res) => {
+// Route to render the signup page
+app.get('/', (req, res) => {
     const SignUpPageHTML = `
     <!DOCTYPE html>
     <html lang="en">
